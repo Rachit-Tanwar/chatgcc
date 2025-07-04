@@ -21,7 +21,7 @@ void *receive_message(void *socket_desc){
       break;
     }
     buffer[read_v] = '\0';
-    printf("Recieved: %s", buffer);
+    printf("Received: %s", buffer);
   }
   return NULL;
 }
