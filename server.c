@@ -95,7 +95,7 @@ int main(int argc, char *argv[]){
           buffer[read_v] = '\0';
           for (int j = 0;j < MAX_CLIENTS;j++){
             if (client_sockets[j] > 0 && j != i){
-              send(client_sockets[i], buffer, strlen(buffer), 0);
+              send(client_sockets[j], buffer, strlen(buffer), 0);
             }
           }
         }
